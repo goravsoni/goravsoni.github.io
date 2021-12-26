@@ -4,14 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <style>
         body {
             height: 100vh;
             margin: 0;
             padding: 0;
         }
-
         .matrix {
             position: fixed;
             top: 0;
@@ -22,7 +20,6 @@
             z-index: -1337;
         }
     </style>
-
     <script>
         window.onload = function () {
             const font = '16pt monospace';
@@ -75,7 +72,7 @@
                 const row = emailPosition.row;
 
                 for (i = 0; i < email.length; i++) {
-                    drawChar(email[i], col + i, row, 'red');
+                    drawChar(email[i], col + i, row, '#FF0000');
                 }
             }
 
